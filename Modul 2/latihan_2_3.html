@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Pendaftaran Mahasiswa Baru</title>
+</head>
+<body>
+  <form action="proses.php" method="post">
+    <label>Nama Lengkap:</label><br>
+    <input type="text" name="nama"><br>
+
+    <label>Tempat/Tanggal Lahir:</label><br>
+    <input type="date" name="tgl_lahir" min="1989-01-01" max="1994-12-31"><br>
+
+    <label>Agama:</label><br>
+    <select name="agama">
+      <option>Islam</option>
+      <option>Kristen</option>
+      <option>Katolik</option>
+      <option>Hindu</option>
+      <option>Budha</option>
+      <option>Konghucu</option>
+    </select><br>
+
+    <label>Jenis Kelamin:</label><br>
+    <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+    <input type="radio" name="jk" value="Perempuan"> Perempuan<br>
+
+    <label>No. Ijazah SMA/MA:</label><br>
+    <input type="text" name="no_ijazah"><br>
+
+    <label>Foto (max 20KB):</label><br>
+    <input type="file" name="foto"><br>
+
+    <label>Nama Ayah:</label><br>
+    <input type="text" name="ayah"><br>
+
+    <label>Nama Ibu:</label><br>
+    <input type="text" name="ibu"><br>
+
+    <label>Alamat Rumah:</label><br>
+    <textarea name="alamat"></textarea><br>
+
+    <label>No. Telp:</label><br>
+    <input type="tel" name="telp"><br>
+
+    <label>Nama Sekolah Asal:</label><br>
+    <input type="text" name="sekolah"><br>
+
+    <label>Jurusan Dipilih:</label><br>
+    <select name="jurusan">
+      <option>Komputerisasi Akuntansi</option>
+      <option>Administrasi Bisnis</option>
+      <option>Teknik Komputer Kontrol</option>
+      <option>Teknik Listrik</option>
+      <option>Mesin Otomotif</option>
+      <option>Perkeretaapian</option>
+      <option>Teknologi Informasi</option>
+      <option>Akuntansi</option>
+    </select><br>
+
+    <label>Tahu informasi ini dari:</label><br>
+    <input type="checkbox" name="info" value="Koran"> Koran
+    <input type="checkbox" name="info" value="Website"> Website
+    <input type="checkbox" name="info" value="Televisi"> Televisi
+    <input type="checkbox" name="info" value="Radio"> Radio
+    <input type="checkbox" name="info" value="Teman"> Teman<br>
+
+    <input type="submit" value="DAFTAR">
+    <input type="reset" value="BATAL">
+  </form>
+</body>
+</html>
