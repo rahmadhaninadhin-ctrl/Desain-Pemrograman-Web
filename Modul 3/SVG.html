@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Halaman SVG</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Nadhin Ayudya Rahmadhani">
+  <meta name="nim" content="12345">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, Helvetica, sans-serif; margin:0; }
+    header { background:#666; color:white; text-align:center; padding:30px; font-size:35px; }
+    nav { float:left; width:30%; background:#ccc; padding:20px; height:300px; }
+    nav ul { list-style:none; padding:0; }
+    nav ul li { margin:10px 0; }
+    article { float:left; width:70%; background:#f1f1f1; padding:20px; height:300px; overflow:auto; }
+    section::after { content:""; display:table; clear:both; }
+    footer { background:#777; color:white; text-align:center; padding:10px; }
+    svg { margin:10px; border:1px solid #333; }
+    @media (max-width:600px) {
+      nav, article { width:100%; height:auto; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Judul Website</h2>
+  </header>
+
+  <section>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gambar.html">Gambar</a></li>
+        <li><a href="event.html">Event</a></li>
+        <li><a href="audio.html">Audio</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="svg.html">SVG</a></li>
+        <li><a href="canvas.html">Canvas</a></li>
+        <li><a href="pendaftaran.html">Form</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <h1>Contoh SVG</h1>
+      <p>Berikut adalah beberapa bentuk SVG:</p>
+      
+      <!-- Lingkaran -->
+      <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/>
+      </svg>
+      
+      <!-- Persegi panjang -->
+      <svg width="120" height="80">
+        <rect width="100" height="50" style="fill:blue; stroke:black; stroke-width:2"/>
+      </svg>
+      
+      <!-- Poligon -->
+      <svg height="200" width="200">
+        <polygon points="100,10 190,190 10,190"
+                 style="fill:lime;stroke:purple;stroke-width:2"/>
+      </svg>
+      
+      <p><!-- Kesimpulan hasil ujicoba ditulis di sini --></p>
+    </article>
+  </section>
+
+  <footer>
+    <p>Footer Website</p>
+  </footer>
+</body>
+</html>

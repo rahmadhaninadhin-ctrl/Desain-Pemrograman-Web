@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Halaman Form Pendaftaran</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Nadhin Ayudya Rahmadhani">
+  <meta name="nim" content="12345">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, Helvetica, sans-serif; margin:0; }
+    header { background:#666; color:white; text-align:center; padding:30px; font-size:35px; }
+    nav { float:left; width:30%; background:#ccc; padding:20px; height:300px; }
+    nav ul { list-style:none; padding:0; }
+    nav ul li { margin:10px 0; }
+    article { float:left; width:70%; background:#f1f1f1; padding:20px; height:300px; overflow:auto; }
+    section::after { content:""; display:table; clear:both; }
+    footer { background:#777; color:white; text-align:center; padding:10px; }
+    form { margin:10px; }
+    input, select, textarea { margin:5px 0; padding:5px; width:90%; }
+    @media (max-width:600px) {
+      nav, article { width:100%; height:auto; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Judul Website</h2>
+  </header>
+
+  <section>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gambar.html">Gambar</a></li>
+        <li><a href="event.html">Event</a></li>
+        <li><a href="audio.html">Audio</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="svg.html">SVG</a></li>
+        <li><a href="canvas.html">Canvas</a></li>
+        <li><a href="pendaftaran.html">Form</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <h1>Form Pendaftaran Seminar</h1>
+      <p>Silakan isi data berikut untuk mendaftar:</p>
+      
+      <form>
+        Nama Lengkap: <input type="text" name="nama" required><br>
+        Email: <input type="email" name="email" required><br>
+        No. Telepon: <input type="tel" name="telp" pattern="[0-9]{4}-[0-9]{6}" placeholder="contoh: 0812-123456" required><br>
+        Tanggal Lahir: <input type="date" name="tgl_lahir" min="1987-01-01" max="1993-01-01"><br>
+        Tingkat Kepentingan: <input type="range" min="0" max="10"><br>
+        Pilih Sesi:
+        <select name="sesi">
+          <option value="17.00">17.00</option>
+          <option value="19.00">19.00</option>
+          <option value="21.00">21.00</option>
+        </select><br>
+        Komentar: <textarea name="komentar"></textarea><br>
+        <input type="submit" value="Daftar">
+      </form>
+      
+      <p><!-- Kesimpulan hasil ujicoba ditulis di sini --></p>
+    </article>
+  </section>
+
+  <footer>
+    <p>Footer Website</p>
+  </footer>
+</body>
+</html>

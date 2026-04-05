@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Halaman Event</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Nadhin Ayudya Rahmadhani">
+  <meta name="nim" content="12345">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, Helvetica, sans-serif; margin:0; }
+    header { background:#666; color:white; text-align:center; padding:30px; font-size:35px; }
+    nav { float:left; width:30%; background:#ccc; padding:20px; height:300px; }
+    nav ul { list-style:none; padding:0; }
+    nav ul li { margin:10px 0; }
+    article { float:left; width:70%; background:#f1f1f1; padding:20px; height:300px; overflow:auto; }
+    section::after { content:""; display:table; clear:both; }
+    footer { background:#777; color:white; text-align:center; padding:10px; }
+    img { margin:10px; border:2px solid #333; cursor:pointer; }
+    @media (max-width:600px) {
+      nav, article { width:100%; height:auto; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Judul Website</h2>
+  </header>
+
+  <section>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gambar.html">Gambar</a></li>
+        <li><a href="event.html">Event</a></li>
+        <li><a href="audio.html">Audio</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="svg.html">SVG</a></li>
+        <li><a href="canvas.html">Canvas</a></li>
+        <li><a href="pendaftaran.html">Form</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <h1>Event pada Gambar</h1>
+      <p>Contoh interaksi dengan gambar menggunakan Mouse Event:</p>
+      
+      <!-- Event onmouseover -->
+      <img src="gambar/pemandangan.jpg" alt="Pemandangan" width="300"
+           onmouseover="alert('Mouse diarahkan ke gambar pemandangan!')">
+      
+      <!-- Event onclick -->
+      <img src="gambar/gunung.jpg" alt="Gunung" width="300"
+           onclick="alert('Gambar gunung diklik!')">
+      
+      <!-- Event ondblclick -->
+      <img src="gambar/pantai.jpg" alt="Pantai" width="300"
+           ondblclick="alert('Gambar pantai di-double click!')">
+      
+      <p><!-- Kesimpulan hasil ujicoba ditulis di sini --></p>
+    </article>
+  </section>
+
+  <footer>
+    <p>Footer Website</p>
+  </footer>
+</body>
+</html>
