@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Layout dengan CSS Grid</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'header header header header'
+        'menu main main right'
+        'footer footer footer footer';
+      grid-gap: 10px;
+      background-color: #2196F3;
+      padding: 10px;
+    }
+
+    header {
+      grid-area: header;
+      background: lightblue;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    nav {
+      grid-area: menu;
+      background: lightgreen;
+      padding: 20px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    main {
+      grid-area: main;
+      background: lightyellow;
+      padding: 20px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    aside {
+      grid-area: right;
+      background: lightpink;
+      padding: 20px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    footer {
+      grid-area: footer;
+      background: lightgray;
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <header>Header</header>
+    <nav>Menu</nav>
+    <main>Main</main>
+    <aside>Right</aside>
+    <footer>Footer</footer>
+  </div>
+</body>
+</html>
