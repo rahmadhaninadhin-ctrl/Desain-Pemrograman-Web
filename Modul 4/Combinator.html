@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Combinator Selector</title>
+    <style>
+      div p { color: red; }          
+      div > p { background-color: yellow; } 
+      div + p { background-color: #a9a9a9; } 
+      div ~ p { color: cyan; }       
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Ini paragraf dalam div → hasil selektor no 1 (div p)</p>
+      <p>Ini paragraf anak langsung div → hasil selektor no 2 (div > p)</p>
+    </div>
+
+      <p>Ini paragraf setelah div → hasil selektor no 3 (div + p)</p>
+      <p>Ini paragraf berikutnya setelah div → hasil selektor no 4 (div ~ p)</p>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Studi Kasus CSS Lengkap</title>
+  <style>
+    /* Selector sederhana */
+    p { color: darkblue; }
+
+    /* ID dan Class */
+    #judul { font-size: 28pt; color: green; }
+    .highlight { background-color: yellow; }
+
+    /* Combinator */
+    div > p { border: 1px solid red; }
+
+    /* Pseudo-class */
+    a:hover { color: red; text-decoration: underline; }
+
+    /* Pseudo-element */
+    p::first-line { font-weight: bold; }
+
+    /* Margin dan Padding */
+    .box {
+      border: 2px solid black;
+      margin: 20px;
+      padding: 15px;
+      background-color: #f0f0f0;
+    }
+
+    /* Border-style */
+    .bordered { border-style: dashed; border-color: blue; }
+
+    /* Display */
+    .inline { display: inline; background-color: lightgreen; }
+    .block { display: block; background-color: lightblue; }
+  </style>
+</head>
+<body>
+  <h1 id="judul">Studi Kasus CSS</h1>
+
+  <p>Ini adalah paragraf pertama dengan selector sederhana.</p>
+  <p class="highlight">Paragraf ini menggunakan class highlight.</p>
+
+  <div>
+    <p>Paragraf ini anak langsung dari div (combinator).</p>
+  </div>
+
+  <p>Paragraf ini akan menampilkan baris pertama dengan font tebal (pseudo-element).</p>
+
+  <div class="box">
+    Elemen ini memiliki margin 20px dan padding 15px.
+  </div>
+
+  <p class="bordered">Paragraf ini memiliki border dashed berwarna biru.</p>
+
+  <div class="inline">Div inline 1</div>
+  <div class="inline">Div inline 2</div>
+  <div class="block">Div block 1</div>
+  <div class="block">Div block 2</div>
+
+  <p><a href="#">Ini adalah link, arahkan mouse ke sini</a></p>
+</body>
+</html>
