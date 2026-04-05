@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Biodata Mahasiswa</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Latihan membuat form">
+        <meta name="keywords" content="form, input, select, textarea">
+        <meta name="author" content="Nadhin Ayudya">
+    </head>
+    <body>
+        <h1>Form Biodata Mahasiswa</h1>
+
+        <form action="#" method="post">
+            <!-- Input Text -->
+            <p>Nama : <input type="text" name="Nama"/></p>
+            <p>NIM  : <input type="text" name="NIM"/></p>
+
+            <!-- Radio Button -->
+            <P>Jenis Kelamin :
+                <input type="radio" name="Gender" value="Laki-Laki"/>
+                <input type="radio" name="Gender" value="Perempuan"/>
+            </P>
+
+            <!-- Checkbox -->
+             <p>Hobi :
+                <input type="checkbox" name="Hobi" value="Membaca"/>
+                <input type="checkbox" name="Hobi" value="Musik"/>
+                <input type="checkbox" name="Hobi" value="Olahraga"/>
+             </p>
+
+             <!-- Checkbox -->
+              <p>Program Studi :
+                <select name="Prodi">
+                    <option value="TI">Teknologi Informasi</option>
+                    <option value="AK">Akuntansi</option>
+                    <option value="BIKOMBISPRO">Bahasa Inggris untuk Komunikasi Bisnis dan Profesional</option>
+                </select>
+              </p>
+
+              <!-- Textarea -->
+               <p>Alamat :
+                <textarea name="Alamat" rows="4" cols="30"></textarea>
+               </p>
+
+               <!-- Tombol Submit -->
+                <p><input type="submit" value="Kirim"/></p>
+        </form>
+    </body>
+</html>
