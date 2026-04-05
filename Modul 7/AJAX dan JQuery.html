@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contoh jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <button id="tombol">Klik Saya</button>
+  <p id="pesan"></p>
+
+  <script>
+    $(document).ready(function(){
+      $("#tombol").click(function(){
+        $("#pesan").text("Halo, ini jQuery!");
+      });
+    });
+  </script>
+</body>
+</html>

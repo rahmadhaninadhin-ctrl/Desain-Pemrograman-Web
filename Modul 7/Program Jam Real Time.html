@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jam Real Time</title>
+</head>
+<body>
+  <h2>Waktu Saat Ini:</h2>
+  <p id="clock"></p>
+
+  <script>
+    function tampilJam() {
+      var sekarang = new Date();
+      var jam = sekarang.getHours();
+      var menit = sekarang.getMinutes();
+      var detik = sekarang.getSeconds();
+      var tanggal = sekarang.toLocaleDateString();
+
+      document.getElementById("clock").innerHTML =
+        tanggal + " " + jam + ":" + menit + ":" + detik;
+    }
+    setInterval(tampilJam, 1000);
+  </script>
+</body>
+</html>
