@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pendaftaran Mahasiswa</title>
+</head>
+<body>
+    <h2>Registrasi Mahasiswa Baru</h2>
+    <form method="POST" action="proses_pendaftaran.php">
+        <fieldset>
+            <legend>Data Pribadi</legend>
+            
+            <p>
+                <label for="nim">Nomor Induk Mahasiswa:</label><br>
+                <input type="text" id="nim" name="nim" placeholder="Masukkan NIM" required>
+            </p>
+            
+            <p>
+                <label for="nama">Nama Lengkap:</label><br>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+            </p>
+            
+            <p>
+                <label for="email">Alamat Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+            </p>
+            
+            <p>
+                <label for="tempat">Tempat Lahir:</label><br>
+                <input type="text" id="tempat" name="tempat" required>
+            </p>
+            
+            <p>
+                <label for="ttl">Tanggal Lahir:</label><br>
+                <input type="date" id="ttl" name="ttl" required>
+            </p>
+            
+            <p>
+                <label for="alamat">Alamat Lengkap:</label><br>
+                <textarea id="alamat" name="alamat" rows="4" cols="40" placeholder="Tuliskan alamat lengkap" required></textarea>
+            </p>
+            
+            <p>
+                <label>Jenis Kelamin:</label><br>
+                <input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki
+                <input type="radio" name="gender" value="Perempuan"> Perempuan
+            </p>
+        </fieldset>
+        
+        <p>
+            <input type="submit" name="kirim" value="Daftar">
+            <input type="reset" value="Bersihkan">
+        </p>
+    </form>
+</body>
+</html>

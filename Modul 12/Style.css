@@ -1,0 +1,232 @@
+/* =====================================================
+   SIAKAD - Sistem Informasi Akademik
+   Teal–Purple Gradient Theme
+   ===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fdf4ff 0%, #ecfeff 100%);
+  min-height: 100vh;
+  color: #1f2937;
+  padding: 20px;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background: linear-gradient(90deg, #14b8a6, #8b5cf6);
+  padding: 14px 28px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.25);
+}
+
+.navbar .brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+.navbar .brand span {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #e0f2fe;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f0f9ff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* ===== Page Header ===== */
+.page-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #14b8a6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+}
+
+.page-header p {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+/* ===== Card ===== */
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ===== Search Bar ===== */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+  flex: 1;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.search-bar input[type="text"]:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(90deg, #14b8a6, #8b5cf6);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-bar button:hover {
+  opacity: 0.9;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #14b8a6, #8b5cf6);
+  color: #fff;
+}
+
+.btn-warning {
+  background: #fde68a;
+  color: #92400e;
+}
+
+.btn-danger {
+  background: #fca5a5;
+  color: #fff;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== Data Table ===== */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #e5e7eb;
+  padding: 12px;
+  text-align: center;
+}
+
+.data-table th {
+  background: #f3f4f6;
+  font-weight: 600;
+}
+
+.data-table tr:hover {
+  background: #f0f9ff;
+}
+
+/* ===== Empty State ===== */
+.empty-state {
+  text-align: center;
+  padding: 24px;
+  color: #6b7280;
+}
+
+.empty-state .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* ===== Stats Grid ===== */
+.stats-grid {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.stat-box {
+  background: linear-gradient(135deg, #14b8a6, #8b5cf6);
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.stat-box h2 {
+  font-size: 28px;
+}
+
+.stat-box p {
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
